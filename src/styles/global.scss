@@ -1,0 +1,38 @@
+@import './tailwind.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Plus+Jakarta+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out 0.3s;
+    font-family: Plus Jakarta Sans, 'sans-serif';
+}
+
+.hide-scroll{
+    &::-webkit-scrollbar {
+        height: 0px;
+        width: 0px;
+        border-radius: toRem(25);
+        background: #f1f1f1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: toRem(25);
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+.svg-full{
+    svg{
+        width: 100%;
+    }
+}
+
+.no-transition {
+    *{
+        transition: all ease 0s !important;
+    }
+}
