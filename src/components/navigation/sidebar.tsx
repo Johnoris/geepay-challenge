@@ -7,7 +7,7 @@ const Sidebar = () => {
     const [ isDarkMode, setIsDarkMode ] = useState(false)
 
     return(
-        <div className="bg-white20 border-r border-grey50 w-max py-5 h-full overflow-y-scroll hide-scroll dark:bg-[#3C3C3C] dark:border-black fixed">
+        <div className="bg-white20 border-r border-grey50 w-max py-5 h-full overflow-y-scroll hide-scroll dark:bg-[#3C3C3C] dark:border-grey90 fixed">
             <div className="px-5">
                 <LOGO/>
             </div>

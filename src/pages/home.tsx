@@ -7,7 +7,7 @@ import SalesGraph from "@/components/graphs/salesGraph"
 
 const Home = () => {
     return(
-        <div className="bg-white50 h-full p-5 dark:bg-[linear-gradient(to_bottom_right,_#3C3C3C,_#333333)] dark:backdrop-blur">
+        <div className="bg-white50 h-full p-5 dark:bg-[linear-gradient(to_bottom_right,_#3C3C3C,_#333333)]">
             <section className="grid grid-cols-5 gap-5 max-[1200px]:grid-cols-2">
                 <div className="col-span-3 max-[1200px]:col-span-2 bg-white rounded-[14px] px-5 py-4 border border-grey700 flex flex-col justify-between dark:bg-[#191717]">
                     <div className="flex justify-between items-center max-[425px]:flex-col max-[425px]:items-start gap-y-2">
@@ -17,6 +17,8 @@ const Home = () => {
                             <select className="px-3 py-[6px] border border-grey800 rounded-[20px] text-xs outline-none bg-white" id="filter">
                                 <option disabled>Select an option</option>
                                 <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option>Yearly</option>
                             </select>
                         </div>
                     </div>

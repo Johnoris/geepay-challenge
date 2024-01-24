@@ -8,7 +8,7 @@ const TopBar = () => {
     const sidebarRef = useRef(null);
     const [ sidebarActive, setSidebarActive ] = useCloseOnClickOutside(sidebarRef)
     return(
-        <div className="border-b border-grey50 px-5 flex items-center justify-between bg-white50 py-[18px] w-full dark:bg-[linear-gradient(to_left,_#3C3C3C,_#333333)] dark:border-black ml-[-1px]">
+        <div className="border-b border-grey50 px-5 flex items-center justify-between bg-white50 py-[18px] w-full dark:bg-[linear-gradient(to_left,_#3C3C3C,_#333333)] dark:border-grey90">
             { sidebarActive && <div ref={sidebarRef} className="fixed h-[100dvh] bottom-0 left-0 z-40"><Sidebar/></div> }
             <div className="hidden max-[768px]:block">
                 <div onClick={() => setSidebarActive(true)}><LOGO/></div>
